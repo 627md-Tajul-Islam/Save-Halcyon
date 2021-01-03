@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviorment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">World</a>
+            <div class="toggle"></div>
+        </header>
+        <img src="img/bg.jpg" class="bg">
+        <img src="img/bird.png" class="bird">
+        <div class="content">
+<h2>We can save The <br><span> World</span></h2>
+<p>Disclaimer video is for educational purpose only. Copyright Disclaimer Under Section 107 of the Copyright Act 1976, allowance is made for "fair use" for  reporting</p>
+            <a href="#">Join Us </a>
+        </div>
+        <ul class="sci"> 
+<li><a href="#"><img src="img/facebook.png" alt=""></a></li>
+<li><a href="#"><img src="img/instagram.png" alt=""></a></li>
+<li><a href="#"><img src="img/twitter.png" alt=""></a></li>
+        </ul>
+
+        <div class="textBlocks">
+
+<div class="block">
+<h3>Defenders of Earth</h3>
+<p>Disclaimer video is for educational purpose only. Copyright Disclaimer</p>
+</div>
+
+<div class="block">
+    <h3>How to save Water</h3>
+    <p>Disclaimer video is for educational purpose only. Copyright Disclaimer</p>
+    </div>  
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("mousemove", function(e){
+            const bg = document.querySelector('.bg');
+            const bird = document.querySelector('.bird');
+            const content = document.querySelector('.content');
+
+            bg.style.width = 100 + e.pageX/100 + '%';
+            bg.style.height = 100 + e.pageX/100 + '%';
+
+            bird.style.right = 100 + e.pageX/2 + 'px';
+
+            content.style.left = 100 + e.pageX/2 + 'px';
+        })
+
+    </script>
+</body>
+</html>
